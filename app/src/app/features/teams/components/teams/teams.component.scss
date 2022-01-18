@@ -1,0 +1,158 @@
+.teams {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .teams-title-description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        .title {
+            border-top: 10px solid black;
+            border-right: 10px solid black;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-top: 15px;
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+        .description {
+            background-color: rgb(233, 233, 233);
+            padding: 15px;
+            border-radius: 10px;
+        }   
+    }
+    .team-card {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            .position-points {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid black;
+                padding-bottom: 15px;
+                .position {
+                    color: black;
+                    font-size: 3.5rem;
+                }
+                .points {
+                    display: flex;
+                    flex-direction: column;
+                    h1 {
+                        color: black;
+                    }
+                    h2 {
+                        color: white;
+                        background-color: black;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .name-logo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid black;
+                h2 {
+                    color: black;
+                    width: 100%;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .image-teamMates {
+                display: flex;
+                flex-direction: column;
+                padding-top: 15px;
+                .teamMates {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .teamMate1 {
+                        display: flex;
+                        justify-content: flex-start;
+                        border-bottom: 1px solid black;
+                        border-right: 1px solid black;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                        width: 100%;
+                        h2 {
+                            font-size: 1.5rem;
+                            color: black;
+                        }
+                    }
+                    .teamMate2 {
+                        display: flex;
+                        justify-content: flex-start;
+                        border-bottom: 1px solid black;
+                        border-right: 1px solid black;
+                        border-radius: 10px;
+                        width: 100%;
+                        h2 {
+                            font-size: 1.5rem;
+                            color: black;
+                        }
+                    }
+                }
+                p {
+                    color: gray;
+                    padding-bottom: 20px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 740px) {
+    .teams {
+        display: flex;
+        .team-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team-card {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .teams {
+        display: flex;
+        padding: 100px;
+        .team-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team-card {
+            display: flex;
+            flex-direction: row;
+            width: 30%;
+        }
+    }
+}

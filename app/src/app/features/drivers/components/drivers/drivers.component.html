@@ -1,0 +1,32 @@
+
+<div class="drivers">
+    <div class="drivers-title-description">
+        <div class="title">
+            <h1>F1 Drivers 2021</h1>
+        </div>
+        <div class="description">
+            <p>Check out this season's official F1 line-up. Full breakdown of drivers, points and current positions. Follow your favourite F1 drivers on and off the track.</p>
+        </div>
+    </div>
+    <div class="driver-list">
+        <div *ngFor="let driver of driversList" class="driver-card">
+            <a href="drivers/detail/{{driver._id}}">
+                <div class="position-points">
+                    <h1 class="position">{{driver.position}}</h1>
+                    <div class="points">
+                        <h1>{{driver.points}}</h1>
+                        <h2>PTS</h2>
+                    </div>
+                </div>
+                <div class="name-flag">
+                    <h2>{{driver.name}}</h2>
+                    <img src="{{driver.flag}}">
+                </div>
+                <div class="image-team">
+                    <p>{{driver.team}}</p>
+                    <img src="{{driver.image1}}">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

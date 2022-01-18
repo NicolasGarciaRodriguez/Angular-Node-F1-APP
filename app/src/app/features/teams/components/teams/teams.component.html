@@ -1,0 +1,38 @@
+<div class="teams">
+    <div class="teams-title-description">
+        <div class="title">
+            <h1>F1 Teams 2021</h1>
+        </div>
+        <div class="description">
+            <p>Discover everything you need to know about this year's Formula 1 teams - drivers, podium finishes, points earned and championship titles.</p>
+        </div>
+    </div>
+    <div class="team-list">
+        <div *ngFor="let team of teamList" class="team-card">
+            <a href="teams/detail/{{team._id}}">
+                <div class="position-points">
+                    <h1 class="position">{{team.position}}</h1>
+                    <div class="points">
+                        <h1>{{team.points}}</h1>
+                        <h2>PTS</h2>
+                    </div>
+                </div>
+                <div class="name-logo">
+                    <h2>{{team.name}}</h2>
+                    <img src="{{team.logo}}">
+                </div>
+                <div class="image-teamMates">
+                    <div class="teamMates">
+                        <div class="teamMate1">
+                            <h2>{{team.driver1}}</h2>
+                        </div>
+                        <div class="teamMate2">
+                            <h2>{{team.driver2}}</h2>
+                        </div>
+                    </div>
+                    <img src="{{team.carImage}}">
+                </div>
+            </a>
+        </div>
+    </div>    
+</div>

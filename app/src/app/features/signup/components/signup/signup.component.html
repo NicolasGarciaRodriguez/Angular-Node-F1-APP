@@ -1,0 +1,40 @@
+<div class="formulario">
+    <form class="form-signup" [formGroup]="signupForm" (ngSubmit)="registerUser()">
+        <div class="title">
+            <h3>SIGN UP</h3>
+        </div>
+        <div class="fullname">
+            <label>FullName</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Enter your fullname" required>
+            <div *ngIf="!signupForm.get('name')?.valid && (signupForm.get('name')?.dirty || submitted)">
+                <p>name must be between 3 and 35 characters</p>
+            </div>
+        </div>
+        <div class="email">
+            <label>Email address</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" required>
+            <div *ngIf="!signupForm.get('email')?.valid && (signupForm.get('email')?.dirty || submitted)">
+                <p>Invalid email</p>
+            </div>
+        </div>
+        <div class="password">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="Enter your password" required>
+            <div *ngIf="!signupForm.get('password')?.valid && (signupForm.get('password')?.dirty || submitted)">
+                <p>Invalid password</p>
+            </div>
+        </div>
+        <div class="repassword">
+            <label>re-password</label>
+            <input type="password" class="form-control" formControlName="repassword" placeholder="Repite your password" required>
+            <div *ngIf="!signupForm.get('repassword')?.valid && (signupForm.get('repassword')?.dirty || submitted)">
+                <p>passwords does not match</p>
+            </div>
+        </div>
+        <div class="boton">
+            <button type="submit" [disabled]="!signupForm?.valid">SIGN UP</button>
+            <p>Already have an account?</p>
+            <a href="/signin"><h4>Sign in with F1</h4></a>
+        </div>
+    </form>
+</div>

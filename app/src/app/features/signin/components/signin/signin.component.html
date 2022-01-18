@@ -1,0 +1,23 @@
+<div class="formulario">
+    <form class="form-signin" [formGroup]="signinForm" (ngSubmit)="loginUser()">
+        <div class="title">
+            <h3>SIGN IN</h3>
+        </div>
+        <div class="email">
+            <label>Email address</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" required>
+        </div>
+        <div class="password">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" placeholder="Enter your password">
+        </div>
+        <div class="forgotten-password">
+            <h4>Forgotten password?</h4>
+        </div>
+        <div class="boton">
+            <button type="submit">SIGN IN</button>
+            <p>Don´t have an account yet?</p>
+            <a href="/signup"><h4>Register with F1</h4></a>
+        </div>
+    </form>
+</div>

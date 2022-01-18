@@ -1,0 +1,101 @@
+.formulario {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    .form-signin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        width: 80%;
+        .title {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            padding: 5px;
+            border-bottom: 1px solid gray;
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+        .email {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 15px;
+            label {
+                color: black;
+                padding-left: 10px;
+            }
+            input {
+                margin-top: 10px;
+                height: 40px;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+        }
+        .password {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            label {
+                color: black;
+                padding-left: 10px;
+            }
+            input {
+                margin-top: 10px;
+                height: 40px;
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+        }
+        .forgotten-password {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            margin-bottom: 15px;
+            h4 {
+                border-bottom: 2px solid red;
+            }
+        }
+        .boton {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            button {
+                color: white;
+                background-color: red;
+                width: 100px;
+                height: 30px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: black;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                width: 120px;
+                border-bottom: 2px solid red;
+                h4 {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .formulario {
+        .form-signin {
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+<div class="menu-mobile">
+    <div class="top-icons">
+        <a class="menu-icon" (click)="toggleDisplay()">
+            <div>
+                <img src="../../../../assets/Images/Icons/Menu.png">
+            </div>
+        </a>
+        <a href="/">
+            <div class="f1-icon">
+                <img src="../../../../assets/Images/Icons/F1-logo.png">
+            </div>
+        </a>
+        <a class="user-icon" [routerLink]="['signin']" *ngIf="!this.authService.isLoggedIn">
+            <div>
+                <img src="../../../../assets/Images/Icons/User.png">
+            </div>
+        </a>
+    </div>
+    <nav *ngIf="!isDisplay">
+        <ul>
+            <a class="home" [routerLink]="['']">
+                <div>
+                    <li><p>Home</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a class="drivers" *ngIf="this.authService.isLoggedIn" [routerLink]="['drivers']">
+                <div>
+                    <li><p>drivers</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a class="teams" *ngIf="this.authService.isLoggedIn" [routerLink]="['teams']">
+                <div>
+                    <li><p>teams</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+        </ul>
+    </nav>
+    <nav class="nav2">
+        <ul>
+            <a class="home" [routerLink]="['']">
+                <div>
+                    <li><p>Home</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a class="drivers" *ngIf="this.authService.isLoggedIn" [routerLink]="['drivers']">
+                <div>
+                    <li><p>drivers</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a class="teams" *ngIf="this.authService.isLoggedIn" [routerLink]="['teams']">
+                <div>
+                    <li><p>teams</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+            <a [routerLink]="['']">
+                <div>
+                    <li><p>WPI</p></li>
+                    <img src="../../../../assets/Images/Icons/arrow2.png">
+                </div>
+            </a>
+        </ul>
+    </nav>
+    <div class="sub-menu" *ngIf="!isDisplay">
+            <a class="sigin" *ngIf="!this.authService.isLoggedIn" [routerLink]="['signin']">
+                <div>
+                    <p>SIGNIN</p>
+                </div>
+            </a>
+            <a class="signup" *ngIf="!this.authService.isLoggedIn" [routerLink]="['signup']">
+                <div>
+                    <p>SIGNUP</p>
+                </div>
+            </a>
+            <a class="logout" (click)="logout()" *ngIf="this.authService.isLoggedIn" [routerLink]="['signin']">
+                <div>
+                    <p>LOGOUT</p>
+                </div>
+            </a>
+    </div>
+    <div class="sub-menu2">
+        <a class="sigin" *ngIf="!this.authService.isLoggedIn" [routerLink]="['signin']">
+            <div>
+                <p>SIGNIN</p>
+            </div>
+        </a>
+        <a class="signup" *ngIf="!this.authService.isLoggedIn" [routerLink]="['signup']">
+            <div>
+                <p>SIGNUP</p>
+            </div>
+        </a>
+        <a class="logout" (click)="logout()" *ngIf="this.authService.isLoggedIn" [routerLink]="['signin']">
+            <div>
+                <p>LOGOUT</p>
+            </div>
+        </a>
+</div>
+    
+</div>

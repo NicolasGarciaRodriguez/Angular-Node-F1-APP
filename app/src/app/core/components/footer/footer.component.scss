@@ -1,0 +1,82 @@
+.footer {
+    background-color: rgb(9, 6, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .f1logo {
+            width: 70px;
+        }
+        .arrow {
+            width: 10px;
+            padding-left: 10px;
+        }
+        h2 {
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+    .partners_1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+        padding-bottom: 15px;
+        img {
+            width: 110px;
+        }
+    }
+    .partners_2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid gray;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        img {
+            width: 80px;
+        }
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 25px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        width: 100%;
+        border-bottom: 10px solid gray;
+        border-right: 10px solid gray;
+        border-radius: 10px;
+        a {
+            text-decoration: none;
+            div {
+                border-bottom: 1px solid gray;
+                padding-bottom: 5px;
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        img {
+            width: 90px;
+        }
+        p {
+            color: white;
+            font-size: 0.6rem;
+        }
+    }
+
+}

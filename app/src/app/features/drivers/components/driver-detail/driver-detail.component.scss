@@ -1,0 +1,141 @@
+.driver-detail {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 30px;
+    .image-number-name {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
+        img {
+            width: 100%
+        }
+        .number-flag {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            h3 {
+                color: gray;
+                font-size: 2.2rem;
+            }
+            img {
+                width: 35px;
+                height: 25px;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .casco-info {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .casco {
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 130px;
+                height: 90px;
+                margin-right: 15px;
+            }
+            h3 {
+                color: red;
+                max-width: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .info {
+            padding-top: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .property {
+                font-weight: bold;
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+            .data {
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .driver-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .image-number-name {
+            width: 50%;
+            border-bottom: none;
+            margin-right: 15px;
+        }
+        .casco-info {
+            width: 50%;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-top: 0;
+            .casco {
+                img {
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+            .info {
+                .property {
+                    font-size: 1.2rem;
+                }
+                .data {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .driver-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .image-number-name {
+            width: 50%;
+            border-bottom: none;
+            margin-right: 15px;
+        }
+        .casco-info {
+            width: 50%;
+            padding-left: 4%;
+            padding-right: 4%;
+            .casco {
+                img {
+                    width: 200px;
+                    height: 150px;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+            .info {
+                .property {
+                    font-size: 1.9rem;
+                }
+                .data {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}

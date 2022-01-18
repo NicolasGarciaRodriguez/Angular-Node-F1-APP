@@ -1,0 +1,228 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    .team-name {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .detail-team {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 30px;
+        .parte1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .team-logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 50px;
+                img {
+                    max-width: 50%;
+                    max-height: 110px;
+                }
+                p {
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+            .team-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .info-name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    p {
+                        color: black;
+                        font-weight: bold;
+                        padding-bottom: 10px;
+                    }
+                }
+                .info-data {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p {
+                        color: black;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .drivers {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .driver1 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    color: gray;
+                }
+            }
+            .driver2 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                h2 {
+                    font-size: 1.2rem;
+                }
+                p {
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .detail-team {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            .parte1 {
+                width: 50%;
+                .team-logo {
+                    img {
+                        margin-right: 20px;
+                    }
+                }
+                .team-info {
+                    .info-name {
+                        width: 50%;
+                    }
+                    .info-data {
+                        width: 50%;
+                    }
+                }
+            }
+            .drivers {
+                width: 50%;
+                .driver1 {
+                    border-left: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                .driver2 {
+                    border-left: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .detail-team {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            .parte1 {
+                width: 50%;
+                .team-logo {
+                    img {
+                        margin-right: 20px;
+                    }
+                }
+                .team-info {
+                    .info-name {
+                        width: 50%;
+                    }
+                    .info-data {
+                        width: 50%;
+                    }
+                }
+            }
+            .drivers {
+                width: 50%;
+                .driver1 {
+                    border-left: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                .driver2 {
+                    border-left: 1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
